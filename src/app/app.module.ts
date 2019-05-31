@@ -7,17 +7,17 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { LayoutModule } from '@angular/cdk/layout';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LayoutModule } from '@angular/cdk/layout';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { HomeHeaderComponent } from './components/home/home-header/home-header.component';
 import { HomePromoComponent } from './components/home/home-promo/home-promo.component';
 import { ResumeComponent } from './components/resume/resume.component';
-import { RouterModule, Routes } from '@angular/router';
 import { PageHeaderComponent } from './components/page-header/page-header.component';
 
 const routes: Routes = [
