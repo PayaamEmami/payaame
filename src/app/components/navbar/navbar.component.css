@@ -8,11 +8,18 @@
   border-radius: 50%;
 }
 
+.mobile-only {
+  display: none;
+}
+
 @media (max-width: 720px) {
   .home-button {
     padding: 0 10px;
   }
-  .social-label {
+  .desktop-only {
     display: none;
+  }
+  .mobile-only {
+    display: flex;
   }
 }

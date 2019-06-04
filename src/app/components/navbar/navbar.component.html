@@ -4,12 +4,17 @@
   </a>
   <a routerLink="/resume" routerLinkActive="active" mat-button>Resume</a>
   <span class="flex-spacer"></span>
-  <a mat-button [href]="twitterUrl">
-    <mat-icon svgIcon="twitter-logo" class="icon-logo"></mat-icon>
-    <span class="social-label"> Twitter</span>
+  <a class="desktop-only" mat-button [href]="githubUrl">
+    <img [src]="githubPath"> GitHub
   </a>
-  <a mat-button [href]="githubUrl">
-    <img [src]="githubPath">
-    <span class="social-label"> GitHub</span>
+  <a class="desktop-only" mat-button [href]="twitterUrl">
+    <mat-icon svgIcon="twitter-logo" class="icon-logo"></mat-icon> Twitter
   </a>
+  <button class="mobile-only" mat-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <a [href]="githubUrl" mat-menu-item>GitHub</a>
+    <a [href]="twitterUrl" mat-menu-item>Twitter</a>
+  </mat-menu>
 </mat-toolbar>
