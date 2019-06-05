@@ -1,20 +1,20 @@
 <mat-toolbar class="mat-elevation-z6" color="primary">
-  <a routerLink="/" routerLinkActive="active" class="home-button" mat-button>
-    <img [src]="logoPath" class="icon-logo"> Home
+  <a mat-button class="home-button" routerLink="/" routerLinkActive="active">
+    <img class="icon-logo" [src]="logoPath"> Home
   </a>
-  <a routerLink="/resume" routerLinkActive="active" mat-button>Resume</a>
+  <a mat-button routerLink="/resume" routerLinkActive="active">Resume</a>
   <span class="flex-spacer"></span>
-  <a class="desktop-only" mat-button [href]="githubUrl">
+  <a mat-button class="desktop-only" [href]="githubUrl">
     <img [src]="githubPath"> GitHub
   </a>
-  <a class="desktop-only" mat-button [href]="twitterUrl">
-    <mat-icon svgIcon="twitter-logo" class="icon-logo"></mat-icon> Twitter
+  <a mat-button class="desktop-only" [href]="twitterUrl">
+    <mat-icon class="icon-logo" svgIcon="twitter-logo"></mat-icon> Twitter
   </a>
-  <button class="mobile-only" mat-button [matMenuTriggerFor]="menu">
+  <button mat-button class="mobile-only" [matMenuTriggerFor]="menu">
     <mat-icon>menu</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
-    <a [href]="githubUrl" mat-menu-item>GitHub</a>
-    <a [href]="twitterUrl" mat-menu-item>Twitter</a>
+    <a mat-menu-item [href]="githubUrl">GitHub</a>
+    <a mat-menu-item [href]="twitterUrl">Twitter</a>
   </mat-menu>
 </mat-toolbar>
