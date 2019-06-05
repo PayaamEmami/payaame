@@ -16,9 +16,11 @@
   .home-button {
     padding: 0 10px;
   }
+
   .desktop-only {
     display: none;
   }
+
   .mobile-only {
     display: flex;
   }
