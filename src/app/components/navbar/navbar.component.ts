@@ -8,10 +8,10 @@ import { MatIconRegistry } from '@angular/material/icon';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  twitterUrl = '';
-  githubUrl = '';
-  githubPath = '';
-  logoPath = '';
+  twitterUrl: string;
+  githubUrl: string;
+  githubPath: string;
+  logoPath: string;
 
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     this.twitterUrl = 'https://twitter.com/payaamemami';
