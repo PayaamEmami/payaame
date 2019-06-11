@@ -19,11 +19,12 @@ import { HomeHeaderComponent } from './components/home/home-header/home-header.c
 import { HomePromoComponent } from './components/home/home-promo/home-promo.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { PageHeaderComponent } from './components/page-header/page-header.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { path: 'resume', component: ResumeComponent },
   { path: '', component: HomeComponent },
-  { path: '**', component: HomeComponent }
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
@@ -35,7 +36,8 @@ const routes: Routes = [
     HomeHeaderComponent,
     HomePromoComponent,
     ResumeComponent,
-    PageHeaderComponent
+    PageHeaderComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
