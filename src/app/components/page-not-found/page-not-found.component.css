@@ -1,3 +1,7 @@
+p {
+  text-align: center;
+}
+
 .page-not-found {
   display: flex;
   align-items: center;
