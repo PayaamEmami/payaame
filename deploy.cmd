@@ -109,7 +109,7 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
 IF EXIST "%DEPLOYMENT_SOURCE%/angular.json" (
 echo Building App in %DEPLOYMENT_SOURCE%…
 pushd "%DEPLOYMENT_SOURCE%"
-call :ExecuteCmd !NPM_CMD! run buil-prod
+call :ExecuteCmd !NPM_CMD! run build-prod
 IF !ERRORLEVEL! NEQ 0 goto error
 popd
 )
