@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./page-not-found.component.css']
 })
 export class PageNotFoundComponent implements OnInit {
-  llamaPath: string;
+  llamaImage = '../../assets/img/misc/llama.jpg';
 
   constructor() {
-    this.llamaPath = '../../assets/img/misc/llama.jpg';
   }
 
   ngOnInit() {

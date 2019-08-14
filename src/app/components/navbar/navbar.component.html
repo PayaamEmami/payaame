@@ -1,20 +1,20 @@
 <mat-toolbar class="mat-elevation-z6" color="primary">
   <a mat-button class="home-button" routerLink="/" routerLinkActive="active">
-    <img class="icon-logo" [src]="logoPath"> Home
+    <img class="icon-logo" [src]="payaamLogoImage"> Home
   </a>
   <a mat-button routerLink="/resume" routerLinkActive="active">Resume</a>
   <span class="flex-spacer"></span>
-  <a mat-button class="desktop-only" [href]="githubUrl" target="_blank">
-    <img [src]="githubPath"> GitHub
+  <a mat-button class="desktop-only" [href]="githubProfileUrl" target="_blank">
+    <img [src]="githubLogoImage"> GitHub
   </a>
-  <a mat-button class="desktop-only" [href]="twitterUrl" target="_blank">
+  <a mat-button class="desktop-only" [href]="twitterProfileUrl" target="_blank">
     <mat-icon class="icon-logo" svgIcon="twitter-logo"></mat-icon> Twitter
   </a>
   <button mat-button class="mobile-only" [matMenuTriggerFor]="menu">
     <mat-icon>menu</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
-    <a mat-menu-item [href]="githubUrl" target="_blank">GitHub</a>
-    <a mat-menu-item [href]="twitterUrl" target="_blank">Twitter</a>
+    <a mat-menu-item [href]="githubProfileUrl" target="_blank">GitHub</a>
+    <a mat-menu-item [href]="twitterProfileUrl" target="_blank">Twitter</a>
   </mat-menu>
 </mat-toolbar>
