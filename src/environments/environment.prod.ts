@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  githubUrl: 'https://github.com/payaamemami',
-  twitterUrl: 'https://twitter.com/payaamemami',
+  githubProfileUrl: 'https://github.com/payaamemami',
+  twitterProfileUrl: 'https://twitter.com/payaamemami',
   watbottRepoUrl: 'https://github.com/PayaamEmami/watbott',
 };

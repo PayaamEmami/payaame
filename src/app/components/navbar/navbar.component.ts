@@ -21,8 +21,8 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.twitterProfileUrl = environment.twitterUrl;
-    this.githubProfileUrl = environment.githubUrl;
+    this.twitterProfileUrl = environment.twitterProfileUrl;
+    this.githubProfileUrl = environment.githubProfileUrl;
     this.iconRegistry.addSvgIcon(
       'twitter-logo',
       this.sanitizer.bypassSecurityTrustResourceUrl('../../assets/img/socials/twitter_white.svg')
