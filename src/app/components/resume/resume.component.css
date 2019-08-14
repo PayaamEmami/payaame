@@ -1,5 +1,11 @@
 mat-card {
   margin: 15px 15px;
+  max-width: 720px;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 h1,
