@@ -4,69 +4,59 @@
     </mat-expansion-panel-header>
     <mat-divider></mat-divider>
     <h1>Strings</h1>
-    <h2><u>String Interpolation</u></h2>
-    <blockquote>
-        <p>
-            The $ character identifies a string literal as an interpolated
-            string.
-        </p>
-        <ul>
-            <li>Literal string: "I like to eat pizza"</li>
-            <li>Interpolated string: $"I like to eat {{'{'}}food{{'}'}}"</li>
-        </ul>
-    </blockquote>
-    <h2><u>Whitespace</u></h2>
-    <blockquote>
-        <p>
-            Use the Trim() method to remove unwanted leading and trailing
-            whitespace.
-        </p>
-        <ul>
-            <li>
-                TrimStart() can be used for leading whitespace and
-                TrimEnd() can be used for trailing whitespace
-            </li>
-        </ul>
-    </blockquote>
-    <h2><u>Replace</u></h2>
-    <blockquote>
-        <p>
-            Replace() can be used to replace substrings within a given string.
-        </p>
-        <ul>
-            <li>food.Replace("pizza", "pasta")</li>
-        </ul>
-    </blockquote>
-    <h2><u>Capitalization</u></h2>
-    <blockquote>
-        <p>
-            ToUpper() and ToLower() are useful methods for making a string
-            ALL CAPS or all lower case.
-        </p>
-        <ul>
-            <li>food.ToUpper() // PIZZA</li>
-            <li>food.ToLower() // pizza</li>
-        </ul>
-        <p>
-            Note: these methods return a copy and won't change the
-            original value in the string.
-        </p>
-    </blockquote>
-    <h2><u>Searching strings</u></h2>
-    <blockquote>
-        <p>
-            The Contains() method returns a boolean value which tells you if
-            the string you were searching for was found.
-        </p>
-        <ul>
-            <li>
-                songLyrics.Contains("Scaramouche, will you do the
-                Fandango?")
-            </li>
-        </ul>
-        <p>
-            StartsWith() and EndsWith() search for substrings at the
-            beginning and ending respectively.
-        </p>
-    </blockquote>
+    <h2><span class="underline">String Interpolation</span></h2>
+    <p class="indent">
+        The $ character identifies a string literal as an interpolated
+        string.
+    </p>
+    <ul class="indent">
+        <li>Literal string: "I like to eat pizza"</li>
+        <li>Interpolated string: $"I like to eat {{'{'}}food{{'}'}}"</li>
+    </ul>
+    <h2><span class="underline">Whitespace</span></h2>
+    <p class="indent">
+        Use the Trim() method to remove unwanted leading and trailing
+        whitespace.
+    </p>
+    <ul class="indent">
+        <li>
+            TrimStart() can be used for leading whitespace and
+            TrimEnd() can be used for trailing whitespace
+        </li>
+    </ul>
+    <h2><span class="underline">Replace</span></h2>
+    <p class="indent">
+        Replace() can be used to replace substrings within a given string.
+    </p>
+    <ul class="indent">
+        <li>food.Replace("pizza", "pasta")</li>
+    </ul>
+    <h2><span class="underline">Capitalization</span></h2>
+    <p class="indent">
+        ToUpper() and ToLower() are useful methods for making a string
+        ALL CAPS or all lower case.
+    </p>
+    <ul class="indent">
+        <li>food.ToUpper() // PIZZA</li>
+        <li>food.ToLower() // pizza</li>
+    </ul>
+    <p class="indent">
+        Note: these methods return a copy and won't change the
+        original value in the string.
+    </p>
+    <h2><span class="underline">Searching strings</span></h2>
+    <p class="indent">
+        The Contains() method returns a boolean value which tells you if
+        the string you were searching for was found.
+    </p>
+    <ul class="indent">
+        <li>
+            songLyrics.Contains("Scaramouche, will you do the
+            Fandango?")
+        </li>
+    </ul>
+    <p class="indent">
+        StartsWith() and EndsWith() search for substrings at the
+        beginning and ending respectively.
+    </p>
 </mat-expansion-panel>

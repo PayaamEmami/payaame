@@ -20,7 +20,7 @@ img {
 
 @media (max-width: 720px) {
   mat-expansion-panel {
-    margin: 0px;
+    margin: 15px 0px;
   }
 
   img {
