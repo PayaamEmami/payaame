@@ -3,6 +3,10 @@ mat-accordion {
   min-width: 85%;
 }
 
+p {
+  margin: 15px;
+}
+
 .accordion-wrapper {
   display: flex;
   justify-content: center;
