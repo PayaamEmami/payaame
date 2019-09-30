@@ -59,4 +59,71 @@
         StartsWith() and EndsWith() search for substrings at the
         beginning and ending respectively.
     </p>
+    <h1>Numbers and Integer Math</h1>
+    <p class="indent">
+        There are more number types than I am going to list here however for
+        most cases int will usually do what is required. For more complex
+        programs that may require large or precise numbers, it is important
+        to take a look at all the different types and compare the range for
+        each type as well as the memory requirements.
+    </p>
+    <h2><span class="underline">Integer</span></h2>
+    <p class="indent">
+        The <strong>int</strong> type represents an integer, a positive or negative whole
+        number.
+    </p>
+    <p class="indent">
+        Common arithmetic operations for integers in C# include:
+    </p>
+    <ul class="indent">
+        <li>+ for addition</li>
+        <li>- for subtraction</li>
+        <li>* for multiplication</li>
+        <li>/ for division</li>
+        <li>% for modulo</li>
+        <li>++ for increment</li>
+        <li>-- for decrement</li>
+    </ul>
+    <p class="indent">
+        Order of operations in mathematics will work the same in C# (PEMDAS).
+    </p>
+    <p class="indent">
+        Integer division will always produce an integer result.
+    </p>
+    <ul>
+        <li>11 / 3 = 3</li>
+    </ul>
+    <h2><span class="underline">Integer precision and limits</span></h2>
+    <p class="indent">
+        Integer division will truncate the result, so the modulo operator
+        can be used to retrieve the remainder.
+    </p>
+    <p class="indent">
+        In mathematics, numbers can go infinitely, however in C# there is a
+        minimum and maximum number that is limited to how much the computer
+        can keep in memory.
+    </p>
+    <ul class="indent">
+        <li>
+            int.MaxValue and int.MinValue will retrieve these minimum and
+            maximum values
+        </li>
+    </ul>
+    <p class="indent">
+        Integer overflow will 'flip the odometer' and wrap around to negative
+        integers.
+    </p>
+    <h2><span class="underline">Doubles</span></h2>
+    <p class="indent">
+        Doubles are floating-point types that let you work with even
+        larger numbers.
+    </p>
+    <p class="indent">
+        Doubles also allow you to work with decimal point values.
+    </p>
+    <h2><span class="underline">Decimals</span></h2>
+    <p class="indent">
+        The <strong>decimal</strong> type has a smaller range but greater
+        precision than <strong>double</strong>.
+    </p>
 </mat-expansion-panel>
