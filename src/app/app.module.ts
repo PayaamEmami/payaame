@@ -27,6 +27,7 @@ import { NotesComponent } from './components/notes/notes.component';
 import { NotesProbAndStatsComponent } from './components/notes/notes-prob-and-stats/notes-prob-and-stats.component';
 import { NotesDotNetComponent } from './components/notes/notes-dot-net/notes-dot-net.component';
 import { NotesCSharpComponent } from './components/notes/notes-c-sharp/notes-c-sharp.component';
+import { NotesDataStructuresComponent } from './components/notes/notes-data-structures/notes-data-structures.component';
 
 const routes: Routes = [
   { path: 'notes', component: NotesComponent },
@@ -49,7 +50,8 @@ const routes: Routes = [
     NotesComponent,
     NotesProbAndStatsComponent,
     NotesDotNetComponent,
-    NotesCSharpComponent
+    NotesCSharpComponent,
+    NotesDataStructuresComponent
   ],
   imports: [
     BrowserModule,
