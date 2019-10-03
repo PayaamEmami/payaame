@@ -6,11 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-promo.component.css']
 })
 export class HomePromoComponent implements OnInit {
-  problemPath = '';
 
-  constructor() {
-    this.problemPath='../../assets/img/promo/problem.jpg';
-   }
+  constructor() { }
 
   ngOnInit() {
   }
