@@ -4,12 +4,211 @@
   </mat-expansion-panel-header>
   <mat-divider></mat-divider>
   <h1>Arrays</h1>
-  <h2><span class="underline"></span></h2>
+  <p class="indent">
+    An array organizes items sequentially in memory.
+  </p>
+  <h2><span class="underline">Strengths</span></h2>
+  <ul>
+    <li>
+      <strong>Fast lookups:</strong> retrieving elements at a given index
+      takes O(1) time, regardless of the length of the array
+    </li>
+    <li>
+      <strong>Fast appends:</strong> adding new elements at the end of the
+      array takes O(1) time
+    </li>
+  </ul>
+  <h2><span class="underline">Weaknesses</span></h2>
+  <ul>
+    <li>
+      <strong>Fixed size:</strong> the number of elements in the array is
+      specified when you declare an array (unless you're using a dynamic array)
+    </li>
+    <li>
+      <strong>Inserts and deletes:</strong> you have to shift the elements in
+      the array when you insert and delete elements, which takes worst-case
+      O(n) time
+    </li>
+  </ul>
+  <h2><span class="underline">Time Complexity</span></h2>
+  <p class="indent">
+    Worst case:
+  </p>
+  <ul>
+    <li>
+      <strong>Access</strong> O(1)
+    </li>
+    <li>
+      <strong>Search</strong> O(n)
+    </li>
+    <li>
+      <strong>Insert</strong> O(n)
+    </li>
+    <li>
+      <strong>Delete</strong> O(n)
+    </li>
+  </ul>
+  <h2><span class="underline">Space Complexity</span></h2>
+  <p class="indent">
+    Worst case:
+  </p>
+  <ul>
+    <li>
+      <strong>Space</strong> O(n)
+    </li>
+  </ul>
   <h1>Stacks</h1>
-  <h2><span class="underline"></span></h2>
+  <p class="indent">
+    A stack stores items in a last-in, first-out (LIFO) order.
+  </p>
+  <h2><span class="underline">Strengths</span></h2>
+  <ul>
+    <li>
+      <strong>Fast operations:</strong> all stack operations take O(1) time
+    </li>
+  </ul>
+  <h2><span class="underline">Uses</span></h2>
+  <ul>
+    <li>
+      <strong>Depth-first search</strong> uses a stack to keep track of which
+      nodes to visit next
+    </li>
+    <li>
+      <strong>The call stack</strong> is a stack that tracks function calls
+      in a program. When a function returns, we pop back to the last one that
+      pushed a function call
+    </li>
+  </ul>
+  <h2><span class="underline">Time Complexity</span></h2>
+  <p class="indent">
+    Worst case:
+  </p>
+  <ul>
+    <li>
+      <strong>Push</strong> O(1)
+    </li>
+    <li>
+      <strong>Pop</strong> O(1)
+    </li>
+    <li>
+      <strong>Peek</strong> O(1)
+    </li>
+  </ul>
+  <h2><span class="underline">Space Complexity</span></h2>
+  <p class="indent">
+    Worst case:
+  </p>
+  <ul>
+    <li>
+      <strong>Space</strong> O(n)
+    </li>
+  </ul>
   <h1>Queues</h1>
-  <h2><span class="underline"></span></h2>
+  <p class="indent">
+    A queue stores items in a first-in, first-out (FIFO) order.
+  </p>
+  <h2><span class="underline">Strengths</span></h2>
+  <ul>
+    <li>
+      <strong>Fast operations:</strong> all queue operations take O(1) time
+    </li>
+  </ul>
+  <h2><span class="underline">Uses</span></h2>
+  <ul>
+    <li>
+      <strong>Breadth-first search</strong> uses a queue to keep track of
+      which nodes to visit next
+    </li>
+    <li>
+      <strong>Web servers</strong> use queues to manage requests-page
+      requests get fulfilled in the order they're received
+    </li>
+    <li>
+      <strong>Processes</strong> wait in the CPU scheduler's queue for their
+      turn to run
+    </li>
+  </ul>
+  <h2><span class="underline">Time Complexity</span></h2>
+  <p class="indent">
+    Worst case:
+  </p>
+  <ul>
+    <li>
+      <strong>Enqueue</strong> O(1)
+    </li>
+    <li>
+      <strong>Dequeue</strong> O(1)
+    </li>
+    <li>
+      <strong>Peek</strong> O(1)
+    </li>
+  </ul>
+  <h2><span class="underline">Space Complexity</span></h2>
+  <p class="indent">
+    Worst case:
+  </p>
+  <ul>
+    <li>
+      <strong>Space</strong> O(n)
+    </li>
+  </ul>
   <h1>Linked Lists</h1>
+  <p class="indent">
+    A linked list organizes items sequentially in nodes, with each node
+    storing data and a pointer to the next one.
+  </p>
+  <h2><span class="underline">Strengths</span></h2>
+  <ul>
+    <li>
+      <strong>Flexible size:</strong> there's no need to specify how many
+      elements to be stored in the linked list ahead of time
+    </li>
+    <li>
+      <strong>Fast operations on the ends:</strong> adding elements at the end
+      of a linked list is O(1) and removing the first element is also O(1)
+    </li>
+  </ul>
+  <h2><span class="underline">Weaknesses</span></h2>
+  <ul>
+    <li>
+      <strong>Costly lookups:</strong> to access or edit and item in a linked
+      list, you have to take O(i) time to iterate through the list to retrieve
+      the ith item
+    </li>
+  </ul>
+  <h2><span class="underline">Time Complexity</span></h2>
+  <p class="indent">
+    Worst case:
+  </p>
+  <ul>
+    <li>
+      <strong>Access</strong> O(n)
+    </li>
+    <li>
+      <strong>Search</strong> O(n)
+    </li>
+    <li>
+      <strong>Insert</strong> O(n)
+    </li>
+    <li>
+      <strong>Delete</strong> O(n)
+    </li>
+    <li>
+      <strong>Append</strong> O(1)
+    </li>
+    <li>
+      <strong>Prepend</strong> O(1)
+    </li>
+  </ul>
+  <h2><span class="underline">Space Complexity</span></h2>
+  <p class="indent">
+    Worst case:
+  </p>
+  <ul>
+    <li>
+      <strong>Space</strong> O(n)
+    </li>
+  </ul>
   <h2><span class="underline"></span></h2>
   <h1>Trees</h1>
   <h2><span class="underline"></span></h2>
