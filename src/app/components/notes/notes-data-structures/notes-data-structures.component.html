@@ -210,10 +210,111 @@
     </li>
   </ul>
   <h2><span class="underline"></span></h2>
-  <h1>Trees</h1>
-  <h2><span class="underline"></span></h2>
+  <h1>Binary Trees</h1>
+  <p class="indent">
+    A binary tree is a tree where every node has two or fewer children. The 
+    children are usually called left and right.
+  </p>
+  <p class="indent">
+    A perfect tree is a tree in which every level is completely full and has 
+    no gaps.
+  </p>
+  <p class="indent">
+    Binary trees have a few interesting properties when they're perfect:
+  </p>
+  <ul>
+    <li>
+      The number of total nodes on each level doubles as we move down the 
+      tree
+    </li>
+    <li>
+      The number of nodes on the last level is equal to the sum of the number 
+      of nodes on all other levels (plus 1).
+    </li>
+  </ul>
   <h1>Graphs</h1>
-  <h2><span class="underline"></span></h2>
+  <p class="indent">
+    A graph organizes items in an interconnected network.
+  </p>
+  <p class="indent">
+    Each item is a node (or vertex). Nodes are connected by edges.
+  </p>
+  <h2><span class="underline">Strengths</span></h2>
+  <ul>
+    <li>
+      <strong>Representing links.</strong> Graphs are ideal for cases where 
+      you're working with things that connect to other things. Nodes and 
+      edges could, for example, respectively represent cities and highways, 
+      routers and ethernet cables, or Facebook users and their friendships.
+    </li>
+  </ul>
+  <h2><span class="underline">Weaknesses</span></h2>
+  <ul>
+    <li>
+      <strong>Scaling challenges.</strong> Most graph algorithms are O(n*lg(n)) 
+      or even slower. Depending on the size of your graph, running algorithms 
+      across your nodes may not be feasible.
+    </li>
+  </ul>
+  <h2><span class="underline">Directed or undirected</span></h2>
+  <p class="indent">
+    In directed graphs, edges point from the node at one end to the node at 
+    the other end. In undirected graphs, the edges simply connect the nodes at 
+    each end.
+  </p>
+  <h2><span class="underline">Cyclic or acyclic</span></h2>
+  <p class="indent">
+    A graph is cyclic if it has a cycle--an unbroken series of nodes with no 
+    repeating nodes or edges that connects back to itself. Graphs without 
+    cycles are acyclic.
+  </p>
+  <h2><span class="underline">Weighted or unweighted</span></h2>
+  <p class="indent">
+    If a graph is weighted, each edge has a "weight". The weight could, for 
+    example, represent the distance between two locations, or the cost or time 
+    it takes to travel between the locations.
+  </p>
+  <h2><span class="underline">Legal coloring</span></h2>
+  <p class="indent">
+    A graph coloring is when you assign colors to each node in a graph. A 
+    legal coloring mean no adjacent nodes have the same color.
+  </p>
   <h1>Hash Tables</h1>
-  <h2><span class="underline"></span></h2>
+  <p class="indent">A hash table organizes data so you can quickly look up 
+    values for a given key.
+  </p>
+  <p class="indent">
+    Other names: hash, hash map, map, unordered map, dictionary.
+  </p>
+  <h2><span class="underline">Strengths</span></h2>
+  <ul>
+    <li>
+      <strong>Fast lookups.</strong> Lookups take O(1) time on average.
+    </li>
+    <li>
+      <strong>Flexible keys.</strong> Most data types can be used for keys, 
+      as long as they're hashable.
+    </li>
+  </ul>
+  <h2><span class="underline">Weaknessess</span></h2>
+  <ul>
+    <li>
+      <strong>Slow worst-case lookups.</strong> Lookups take O(n) time in the 
+      worst case.
+    </li>
+    <li>
+      <strong>Unordered.</strong> Keys aren't stored in a special order. If 
+      you're looking for the smallest key, the largest key, or all the keys in 
+      a range, you'll need to look through every key to find it.
+    </li>
+    <li>
+      <strong>Single-directional lookups.</strong> While you can look up the 
+      value for a given key in O(1) time, looking up the keys for a given value 
+      requires looping through the whole dataset--O(n) time.
+    </li>
+    <li>
+      <strong>Not cache-friendly.</strong> Many hash table implementations use 
+      linked lists, which don't put data next to each other in memory.
+    </li>
+  </ul>
 </mat-expansion-panel>
