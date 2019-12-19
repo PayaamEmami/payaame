@@ -7,7 +7,7 @@
   <p class="indent">
     An array organizes items sequentially in memory.
   </p>
-  <h2><span class="underline">Strengths</span></h2>
+  <h2 class="underline">Strengths</h2>
   <ul>
     <li>
       <strong>Fast lookups:</strong> retrieving elements at a given index
@@ -18,7 +18,7 @@
       array takes O(1) time
     </li>
   </ul>
-  <h2><span class="underline">Weaknesses</span></h2>
+  <h2 class="underline">Weaknesses</h2>
   <ul>
     <li>
       <strong>Fixed size:</strong> the number of elements in the array is
@@ -30,7 +30,7 @@
       O(n) time
     </li>
   </ul>
-  <h2><span class="underline">Time Complexity</span></h2>
+  <h2 class="underline">Time Complexity</h2>
   <p class="indent">
     Worst case:
   </p>
@@ -48,7 +48,7 @@
       <strong>Delete</strong> O(n)
     </li>
   </ul>
-  <h2><span class="underline">Space Complexity</span></h2>
+  <h2 class="underline">Space Complexity</h2>
   <p class="indent">
     Worst case:
   </p>
@@ -67,13 +67,13 @@
   <p class="indent">
     A stack stores items in a last-in, first-out (LIFO) order.
   </p>
-  <h2><span class="underline">Strengths</span></h2>
+  <h2 class="underline">Strengths</h2>
   <ul>
     <li>
       <strong>Fast operations:</strong> all stack operations take O(1) time
     </li>
   </ul>
-  <h2><span class="underline">Uses</span></h2>
+  <h2 class="underline">\1</h2>
   <ul>
     <li>
       <strong>Depth-first search</strong> uses a stack to keep track of which
@@ -85,7 +85,7 @@
       pushed a function call
     </li>
   </ul>
-  <h2><span class="underline">Time Complexity</span></h2>
+  <h2 class="underline">Time Complexity</h2>
   <p class="indent">
     Worst case:
   </p>
@@ -100,7 +100,7 @@
       <strong>Peek</strong> O(1)
     </li>
   </ul>
-  <h2><span class="underline">Space Complexity</span></h2>
+  <h2 class="underline">Space Complexity</h2>
   <p class="indent">
     Worst case:
   </p>
@@ -119,13 +119,13 @@
   <p class="indent">
     A queue stores items in a first-in, first-out (FIFO) order.
   </p>
-  <h2><span class="underline">Strengths</span></h2>
+  <h2 class="underline">Strengths</h2>
   <ul>
     <li>
       <strong>Fast operations:</strong> all queue operations take O(1) time
     </li>
   </ul>
-  <h2><span class="underline">Uses</span></h2>
+  <h2 class="underline">Uses</h2>
   <ul>
     <li>
       <strong>Breadth-first search</strong> uses a queue to keep track of
@@ -140,7 +140,7 @@
       turn to run
     </li>
   </ul>
-  <h2><span class="underline">Time Complexity</span></h2>
+  <h2 class="underline">Time Complexity</h2>
   <p class="indent">
     Worst case:
   </p>
@@ -155,7 +155,7 @@
       <strong>Peek</strong> O(1)
     </li>
   </ul>
-  <h2><span class="underline">Space Complexity</span></h2>
+  <h2 class="underline">Space Complexity</h2>
   <p class="indent">
     Worst case:
   </p>
@@ -175,7 +175,7 @@
     A linked list organizes items sequentially in nodes, with each node
     storing data and a pointer to the next one.
   </p>
-  <h2><span class="underline">Strengths</span></h2>
+  <h2 class="underline">Strengths</h2>
   <ul>
     <li>
       <strong>Flexible size:</strong> there's no need to specify how many
@@ -186,7 +186,7 @@
       of a linked list is O(1) and removing the first element is also O(1)
     </li>
   </ul>
-  <h2><span class="underline">Weaknesses</span></h2>
+  <h2 class="underline">Weaknesses</h2>
   <ul>
     <li>
       <strong>Costly lookups:</strong> to access or edit and item in a linked
@@ -194,7 +194,7 @@
       the ith item
     </li>
   </ul>
-  <h2><span class="underline">Time Complexity</span></h2>
+  <h2 class="underline">Time Complexity</h2>
   <p class="indent">
     Worst case:
   </p>
@@ -218,7 +218,7 @@
       <strong>Prepend</strong> O(1)
     </li>
   </ul>
-  <h2><span class="underline">Space Complexity</span></h2>
+  <h2 class="underline">Space Complexity</h2>
   <p class="indent">
     Worst case:
   </p>
@@ -268,7 +268,7 @@
   <p class="indent">
     Each item is a node (or vertex). Nodes are connected by edges.
   </p>
-  <h2><span class="underline">Strengths</span></h2>
+  <h2 class="underline">Strengths</h2>
   <ul>
     <li>
       <strong>Representing links:</strong> Graphs are ideal for cases where
@@ -277,7 +277,7 @@
       routers and ethernet cables, or Facebook users and their friendships.
     </li>
   </ul>
-  <h2><span class="underline">Weaknesses</span></h2>
+  <h2 class="underline">Weaknesses</h2>
   <ul>
     <li>
       <strong>Scaling challenges:</strong> Most graph algorithms are O(n*lg(n))
@@ -285,25 +285,25 @@
       across your nodes may not be feasible.
     </li>
   </ul>
-  <h2><span class="underline">Directed or undirected</span></h2>
+  <h2 class="underline">Directed or undirected</h2>
   <p class="indent">
     In directed graphs, edges point from the node at one end to the node at
     the other end. In undirected graphs, the edges simply connect the nodes at
     each end.
   </p>
-  <h2><span class="underline">Cyclic or acyclic</span></h2>
+  <h2 class="underline">Cyclic or acyclic</h2>
   <p class="indent">
     A graph is cyclic if it has a cycle--an unbroken series of nodes with no
     repeating nodes or edges that connects back to itself. Graphs without
     cycles are acyclic.
   </p>
-  <h2><span class="underline">Weighted or unweighted</span></h2>
+  <h2 class="underline">Weighted or unweighted</h2>
   <p class="indent">
     If a graph is weighted, each edge has a "weight". The weight could, for
     example, represent the distance between two locations, or the cost or time
     it takes to travel between the locations.
   </p>
-  <h2><span class="underline">Legal coloring</span></h2>
+  <h2 class="underline">Legal coloring</h2>
   <p class="indent">
     A graph coloring is when you assign colors to each node in a graph. A
     legal coloring mean no adjacent nodes have the same color.
@@ -321,7 +321,7 @@
   <p class="indent">
     Other names: hash, hash map, map, unordered map, dictionary.
   </p>
-  <h2><span class="underline">Strengths</span></h2>
+  <h2 class="underline">Strengths</h2>
   <ul>
     <li>
       <strong>Fast lookups:</strong> Lookups take O(1) time on average.
@@ -331,7 +331,7 @@
       as long as they're hashable.
     </li>
   </ul>
-  <h2><span class="underline">Weaknessess</span></h2>
+  <h2 class="underline">Weaknessess</h2>
   <ul>
     <li>
       <strong>Slow worst-case lookups:</strong> Lookups take O(n) time in the
