@@ -221,7 +221,7 @@
     Data Distributions
   </mat-expansion-panel-header>
   <mat-divider></mat-divider>
-  <h2 class="underline">Mean, variance, and standard deviation</h2>
+  <h2 class="underline">Mean</h2>
   <p class="indent">
     A <strong>population</strong> is the entire group of subjects that we're
     interested in. A <strong>sample</strong> is just a sub-section of the
@@ -239,4 +239,31 @@
     The mean of a population is still defined as μ, but we'll define the mean
     of a sample with x̄ (pronounced "x-bar").
   </p>
+  <p class="indent">
+    The capital N means you have included everyone (the population), and the
+    lowercase n means you have selected just a few individuals (the sample).
+  </p>
+  <h2 class="underline">Variance</h2>
+  <p class="indent">
+    Variance is the measure of how far the data is spread from the mean.
+  </p>
+  <p class="indent">
+    Population variance is given by σ<sup>2</sup> (pronounced "sigma squared").
+  </p>
+  <img src="./../../../assets/img/stats/PopulationVariance.png">
+  <p class="indent">
+    Finding sample variance is a very similar process to finding population
+    variance, but we use a slightly different formula:
+  </p>
+  <img src="./../../../assets/img/stats/BiasedSampleVariance.png">
+  <p class="indent">
+    This sample variance formula is not accurate, we usually say that the
+    formula above gives biased sample variance.
+  </p>
+  <p class="indent">
+    The easy way to make the sample variance formula a lot more accurate is to
+    divide by n - 1 instead of n. The better formula for sample variance that
+    we want to use is:
+  </p>
+  <img src="./../../../assets/img/stats/UnbiasedSampleVariance.png">
 </mat-expansion-panel>
