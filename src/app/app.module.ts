@@ -1,37 +1,37 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatExpansionModule } from '@angular/material/expansion';
-import { MatIconModule } from '@angular/material/icon';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { LayoutModule } from '@angular/cdk/layout';
-import { RouterModule, Routes } from '@angular/router';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { HttpClientModule } from "@angular/common/http";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { MatButtonModule } from "@angular/material/button";
+import { MatCardModule } from "@angular/material/card";
+import { MatDividerModule } from "@angular/material/divider";
+import { MatExpansionModule } from "@angular/material/expansion";
+import { MatIconModule } from "@angular/material/icon";
+import { MatMenuModule } from "@angular/material/menu";
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { LayoutModule } from "@angular/cdk/layout";
+import { RouterModule, Routes } from "@angular/router";
 
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { HomeComponent } from './components/home/home.component';
-import { HomeHeaderComponent } from './components/home/home-header/home-header.component';
-import { HomePromoComponent } from './components/home/home-promo/home-promo.component';
-import { PageHeaderComponent } from './components/page-header/page-header.component';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { NotesComponent } from './components/notes/notes.component';
-import { NotesProbAndStatsComponent } from './components/notes/notes-prob-and-stats/notes-prob-and-stats.component';
-import { NotesDotNetComponent } from './components/notes/notes-dot-net/notes-dot-net.component';
-import { NotesCSharpComponent } from './components/notes/notes-c-sharp/notes-c-sharp.component';
-import { NotesDataStructuresComponent } from './components/notes/notes-data-structures/notes-data-structures.component';
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { FooterComponent } from "./components/footer/footer.component";
+import { NavbarComponent } from "./components/navbar/navbar.component";
+import { HomeComponent } from "./components/home/home.component";
+import { HomeHeaderComponent } from "./components/home/home-header/home-header.component";
+import { HomePromoComponent } from "./components/home/home-promo/home-promo.component";
+import { PageHeaderComponent } from "./components/page-header/page-header.component";
+import { PageNotFoundComponent } from "./components/page-not-found/page-not-found.component";
+import { NotesComponent } from "./components/notes/notes.component";
+import { NotesProbAndStatsComponent } from "./components/notes/notes-prob-and-stats/notes-prob-and-stats.component";
+import { NotesDotNetComponent } from "./components/notes/notes-dot-net/notes-dot-net.component";
+import { NotesCSharpComponent } from "./components/notes/notes-c-sharp/notes-c-sharp.component";
+import { NotesDataStructuresComponent } from "./components/notes/notes-data-structures/notes-data-structures.component";
+import { NotesPythonComponent } from "./components/notes/notes-python/notes-python.component";
 
 const routes: Routes = [
-  { path: 'notes', component: NotesComponent },
-  { path: '', component: HomeComponent },
-  { path: '**', component: PageNotFoundComponent }
+  { path: "notes", component: NotesComponent },
+  { path: "", component: HomeComponent },
+  { path: "**", component: PageNotFoundComponent }
 ];
 
 @NgModule({
@@ -48,7 +48,8 @@ const routes: Routes = [
     NotesProbAndStatsComponent,
     NotesDotNetComponent,
     NotesCSharpComponent,
-    NotesDataStructuresComponent
+    NotesDataStructuresComponent,
+    NotesPythonComponent
   ],
   imports: [
     BrowserModule,
@@ -63,9 +64,9 @@ const routes: Routes = [
     MatMenuModule,
     MatToolbarModule,
     MatCardModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
