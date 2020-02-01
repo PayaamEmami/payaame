@@ -21,15 +21,8 @@ import { HomeHeaderComponent } from "./components/home/home-header/home-header.c
 import { HomePromoComponent } from "./components/home/home-promo/home-promo.component";
 import { PageHeaderComponent } from "./components/page-header/page-header.component";
 import { PageNotFoundComponent } from "./components/page-not-found/page-not-found.component";
-import { NotesComponent } from "./components/notes/notes.component";
-import { NotesProbAndStatsComponent } from "./components/notes/notes-prob-and-stats/notes-prob-and-stats.component";
-import { NotesDotNetComponent } from "./components/notes/notes-dot-net/notes-dot-net.component";
-import { NotesCSharpComponent } from "./components/notes/notes-c-sharp/notes-c-sharp.component";
-import { NotesDataStructuresComponent } from "./components/notes/notes-data-structures/notes-data-structures.component";
-import { NotesPythonComponent } from "./components/notes/notes-python/notes-python.component";
 
 const routes: Routes = [
-  { path: "notes", component: NotesComponent },
   { path: "", component: HomeComponent },
   { path: "**", component: PageNotFoundComponent }
 ];
@@ -44,12 +37,6 @@ const routes: Routes = [
     HomePromoComponent,
     PageHeaderComponent,
     PageNotFoundComponent,
-    NotesComponent,
-    NotesProbAndStatsComponent,
-    NotesDotNetComponent,
-    NotesCSharpComponent,
-    NotesDataStructuresComponent,
-    NotesPythonComponent
   ],
   imports: [
     BrowserModule,
